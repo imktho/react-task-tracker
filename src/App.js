@@ -1,4 +1,5 @@
 import Header from './components/Header'
+import AddTask from './components/AddTask';
 import Tasks from './components/Tasks';
 import { useState } from 'react'
 
@@ -40,6 +41,7 @@ const toggleReminder = (id) => {
   return (
     <div className="container">
       <Header />
+      <AddTask/>
       { 
         tasks.length <= 0 ? 
           'No Tasks' 
