@@ -2,9 +2,9 @@ import { FaAngleDown } from "react-icons/fa"
 
 const TaskHeader = ({title, onToggleTasks}) => {
     return (
-        <header className='header'>
+        <header className='header' onClick={onToggleTasks}>
             <h2>{title}</h2>
-            <FaAngleDown onClick={onToggleTasks}/>
+            <FaAngleDown />
         </header>
     )
 }
