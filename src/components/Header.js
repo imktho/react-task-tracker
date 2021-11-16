@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import Button from './Button'
 
-export const Header = ({title}) => {
+const Header = ({title}) => {
     return (
         <header className='header'>
             <h1>{title}</h1>
